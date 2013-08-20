@@ -1,0 +1,37 @@
+[ 2013-08-17T23:04:34+08:00 ] 127.0.0.1 /open_ppsuc/member.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012643s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001011s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000991s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000847s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004219s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001279s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2013-08-17T23:06:34+08:00 ] 127.0.0.1 /open_ppsuc/member.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.001355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001479s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000563s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000613s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000462s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002742s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000864s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2013-08-17T23:06:42+08:00 ] ERR: (ThinkException) 无法加载模块:public
+[ 2013-08-17T23:07:24+08:00 ] ERR: (ThinkException) 无法加载模块:public
+[ 2013-08-17T23:07:25+08:00 ] ERR: (ThinkException) 无法加载模块:public

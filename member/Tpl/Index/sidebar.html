@@ -1,0 +1,31 @@
+<div style="max-width: 340px; padding: 8px 0;" class="well">
+              <ul class="nav nav-list">
+                <li class="nav-header">我的会员中心</li>
+		<if condition="(MODULE_NAME eq 'Index') AND (ACTION_NAME eq 'index')">
+                <li class="active"><a href="__APP__">首页</a></li>
+		<else/>
+		<li><a href="__APP__">首页</a></li>
+		</if>
+		<if condition="(MODULE_NAME eq 'Index') AND (ACTION_NAME eq 'changeinfo')">
+                <li class="active"><a href="__APP__/index/changeinfo">更改资料</a></li>
+		<else/>
+                <li><a href="__APP__/index/changeinfo">更改资料</a></li>
+		</if>
+		<if condition="(MODULE_NAME eq 'Index') AND (ACTION_NAME eq 'loginlog')">
+                <li class="active"><a href="__APP__/index/loginlog">登陆日志</a></li>
+		<else/>
+                <li><a href="__APP__/index/loginlog">登陆日志</a></li>
+		</if>
+                <li><a href="#">短消息</a></li>
+                <li class="nav-header">课程中心</li>
+		<if condition="(MODULE_NAME eq 'Course') AND (ACTION_NAME eq 'index')">
+                <li class="active"><a href="__APP__/course">最新课程</a></li>
+		<else/>
+                <li><a href="__APP__/course">最新课程</a></li>
+		</if>
+                <li><a href="#">已购买课程</a></li>
+                <li class="divider"></li>
+                <li><a href="__ROOT__">返回网站首页</a></li>
+                <li><a href="#">帮助中心</a></li>
+              </ul>
+            </div>

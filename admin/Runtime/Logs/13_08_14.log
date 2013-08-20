@@ -1,0 +1,105 @@
+[ 2013-08-14T11:39:55+08:00 ] 0.0.0.0 /0595ty/admin.php/Public/password/?_=1376451595683
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001520s ]
+INFO: Run CheckLang Behavior [ RunTime:0.003559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005897s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001216s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001679s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018521s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001293s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001558s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001015s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008393s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001804s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002436s ]
+
+[ 2013-08-14T11:45:36+08:00 ] 0.0.0.0 /0595ty/admin.php/Public/main?_=1376451936605
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001354s ]
+INFO: Run CheckLang Behavior [ RunTime:0.002770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004836s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001606s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002606s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.021520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022170s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001267s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001354s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001253s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007873s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001768s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002439s ]
+
+[ 2013-08-14T11:45:39+08:00 ] 0.0.0.0 /0595ty/admin.php/Public/password/?_=1376451939690
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002144s ]
+INFO: Run CheckLang Behavior [ RunTime:0.003226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006263s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001324s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001817s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016267s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001449s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001314s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000768s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007252s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001869s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002389s ]
+
+[ 2013-08-14T11:47:16+08:00 ] 0.0.0.0 /0595ty/admin.php/Public/password/?_=1376452035997
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001893s ]
+INFO: Run CheckLang Behavior [ RunTime:0.004954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007901s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002169s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.020057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020727s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001177s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001429s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000852s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006789s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001548s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002050s ]
+
+[ 2013-08-14T12:01:43+08:00 ] 0.0.0.0 /0595ty/admin.php/Public/password/?_=1376452903628
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001713s ]
+INFO: Run CheckLang Behavior [ RunTime:0.003083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005595s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001438s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001931s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018109s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001136s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001261s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000912s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006570s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001710s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002361s ]
+
