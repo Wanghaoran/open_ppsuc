@@ -18,7 +18,7 @@
 		</if>
                 <li><a href="#">短消息</a></li>
                 <li class="nav-header">课程中心</li>
-		<if condition="(MODULE_NAME eq 'Course') AND (ACTION_NAME eq 'index')">
+		<if condition="((MODULE_NAME eq 'Course') AND (ACTION_NAME eq 'index')) OR ((MODULE_NAME eq 'Course') AND (ACTION_NAME eq 'lists')) OR ((MODULE_NAME eq 'Course') AND (ACTION_NAME eq 'info'))">
                 <li class="active"><a href="__APP__/course">最新课程</a></li>
 		<else/>
                 <li><a href="__APP__/course">最新课程</a></li>

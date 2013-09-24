@@ -24,26 +24,39 @@
     </div>
     <div class="span9">
       <div class="well">
-	<volist name="result_course" id="rc">
 	<ul class="nav nav-tabs">
-	  <li class="active"><a href="__URL__/lists/id/<!--{$rc.id}--!>"><!--{$rc.name}--!></a></li>
+	  <li class="active"><a href="#"><!--{$result.name}--!></a></li>
 	  <li class="pull-right"><a href="#"><i class="icon-shopping-cart"></i> 购买此课程>></a></li>
 	</ul>
-	<div class="row-fluid">
-	  <ul class="thumbnails">
-	  <volist name="rc.list" id="rcl">
-	    <li class="span3">
-	      <div class="thumbnail">
-		<img src="__UPLOAD__/<!--{$rcl.pic}--!>" />
-		<div class="caption">
-		  <p><a href="__URL__/info/id/<!--{$rcl.id}--!>"><!--{$rcl.name}--!></a></p>
-		</div>
-              </div>
-            </li>
-	  </volist>
-          </ul>
-        </div>
-	</volist>
+	<p><!--{$result.remark|nl2br}--!></p>
+	<ul class="nav nav-tabs">
+	  <li class="active"><a href="#">课程列表</a></li>
+	</ul>
+	<div class="tab-content">
+	    <div class="tab-pane active" id="tab1">
+	      <table class="table table-striped">
+		<thead>
+		  <tr>
+                    <th>#</th>
+                    <th>课程名称</th>
+                    <th>添加时间</th>
+                    <th>说明</th>
+                    <th>操作</th>
+                  </tr>
+		</thead>
+                <tbody>
+		<volist name="result_c" id="rc">
+                <tr>
+		  <td><!--{$rc.id}--!></td>
+		  <td><!--{$rc.name}--!></td>
+                  <td><!--{$rc.addtime|date="Y-m-d", ###}--!></td>
+		  <td><!--{$rc.content}--!></td>
+		  <td><a href="__URL__/info/id/<!--{$rc.id}--!>" class="label label-info">观看</a></td>
+                </tr>
+		</volist>
+                </tbody>
+	      </table>
+	    </div>
       </div>
     </div>
   </div>

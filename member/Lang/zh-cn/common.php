@@ -12,7 +12,8 @@ $app_lang = array(
   'MEMBER_LOGIN_SUCCESS' => '登陆成功，欢迎光临！',
   'MEMBER_LOGIN_ERROR' => '登陆失败，用户名或密码错误！',
   'LOGOUT_SUCCESS' => '退出成功！您现在为游客身份',
-  'LOGOUT_ERROR' => '退出失败！您还未登陆'
+  'LOGOUT_ERROR' => '退出失败！您还未登陆',
+  'NOT_LOGIN' => '您还未登录!请先登录!',
 );
 
 return array_merge($common_lang, $app_lang);

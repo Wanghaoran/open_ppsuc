@@ -24,27 +24,25 @@
     </div>
     <div class="span9">
       <div class="well">
-	<volist name="result_course" id="rc">
 	<ul class="nav nav-tabs">
-	  <li class="active"><a href="__URL__/lists/id/<!--{$rc.id}--!>"><!--{$rc.name}--!></a></li>
-	  <li class="pull-right"><a href="#"><i class="icon-shopping-cart"></i> 购买此课程>></a></li>
+	  <li class="active"><a href="#"><!--{$result.cname}--!> - <!--{$result.name}--!></a></li>
+	  <li class="pull-right"><a href="__URL__/lists/id/<!--{$result.cid}--!>">返回课程列表>></a></li>
 	</ul>
-	<div class="row-fluid">
-	  <ul class="thumbnails">
-	  <volist name="rc.list" id="rcl">
-	    <li class="span3">
-	      <div class="thumbnail">
-		<img src="__UPLOAD__/<!--{$rcl.pic}--!>" />
-		<div class="caption">
-		  <p><a href="__URL__/info/id/<!--{$rcl.id}--!>"><!--{$rcl.name}--!></a></p>
-		</div>
-              </div>
-            </li>
-	  </volist>
-          </ul>
-        </div>
-	</volist>
-      </div>
+	<div class="row">
+	  <div class="span2">
+	    <img src="__UPLOAD__/<!--{$result.pic}--!>" class="img-polaroid" />
+	  </div>
+	  <div class="span6">
+	    <p><!--{$result.content|nl2br}--!></p>
+	  </div>
+	</div>
+	<div style="margin:20px;"></div>
+	<ul class="nav nav-tabs">
+	  <li class="active"><a href="#">在线观看</a></li>
+	</ul>
+	<div>
+	<embed src="<!--{$result.file}--!>" allowFullScreen="true" quality="high" width="660" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+	</div>
     </div>
   </div>
 </div>

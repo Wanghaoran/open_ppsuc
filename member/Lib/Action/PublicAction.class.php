@@ -35,7 +35,11 @@ class PublicAction extends Action {
       $member -> where(array('id' => $result['id'])) -> setInc('login_count');
       //记录登陆日志
       M('MemberLoginLog') -> add(array('mid' => $result['id'], 'login_time' => time(), 'login_ip' => get_client_ip()));
-      $this -> success(L('MEMBER_LOGIN_SUCCESS'), U('Index/index'));
+      if(!empty($_POST['module_name']) && !empty($_POST['action_name'])){
+	$this -> success(L('MEMBER_LOGIN_SUCCESS'), U($_POST['module_name'] . '/' . $_POST['action_name']));   
+      }else{
+	$this -> success(L('MEMBER_LOGIN_SUCCESS'), U('Index/index'));      
+      }
     }else{
       $this -> error(L('MEMBER_LOGIN_ERROR'));
     }
