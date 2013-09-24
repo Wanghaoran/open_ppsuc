@@ -31,8 +31,12 @@
 	</ul>
 	<div class="row-fluid">
 	  <ul class="thumbnails">
-	  <volist name="rc.list" id="rcl">
+	  <volist name="rc.list" id="rcl" mod="4">
+	    <eq name="mod" value="0">
+	    <li class="span3" style="margin-left:0;">
+	    <else/>
 	    <li class="span3">
+	    </eq>
 	      <div class="thumbnail">
 		<img src="__UPLOAD__/<!--{$rcl.pic}--!>" />
 		<div class="caption">
