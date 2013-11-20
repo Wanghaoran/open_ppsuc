@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>中国人民公安大学网络教育学院</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="__PUBLIC__/index/bootstarp/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/index/style/styles.less">
+    <script src="__PUBLIC__/index/javascript/less.min.js" type="text/javascript"></script>
+    <script src="__PUBLIC__/index/javascript/jquery.min.js"></script>
+    <script src="__PUBLIC__/index/bootstarp/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+<include file="Index:header" />
+
+<div class="container-fluid">
+    <div class="page-header">
+        <h1><!--{$result.name}--!><small>  - 网络学院名师介绍</small></h1>
+
+    </div>
+    <div class="well well-large">
+    <img src="__UPLOAD__/temp/<!--{$result.pic}--!>" class="img-rounded" style="height:200px;">
+    <button class="btn btn-primary pull-right" type="button" onclick="location.href='__URL__/teacherlist';">返回列表页</button>
+    <hr/>
+    <blockquote>
+    <p><!--{$result.big_content}--!></p>
+    </blockquote>
+    </div>
+</div>
+
+
+
+<include file="Index:footer" />
+
+</body>
+</html>

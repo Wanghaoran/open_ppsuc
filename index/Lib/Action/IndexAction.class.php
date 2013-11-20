@@ -8,4 +8,22 @@ class IndexAction extends CommonAction {
     $this -> display();
   }
 
+    public function teacherlist(){
+        $teacher = M('Teacher');
+        $result = $teacher -> field('id,name,pic,small_content') -> select();
+        $this -> assign('result', $result);
+        $this -> display();
+    }
+
+    public function teacherinfo(){
+        $teacher = M('Teacher');
+        $result = $teacher -> field('id,name,pic,small_content,big_content') -> find($this -> _get('id', 'intval'));
+        $this -> assign('result', $result);
+        $this -> display();
+    }
+
+    public function aboutus(){
+        $this -> display();
+    }
+
 }
