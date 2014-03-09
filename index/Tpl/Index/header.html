@@ -16,6 +16,14 @@
                     <li><a href="__ROOT__/index/teacherlist">名师简介</a></li>
 
                 </if>
+
+                <if condition="(MODULE_NAME eq 'Index') AND (ACTION_NAME eq 'unionschool')">
+                    <li class="active"><a href="__ROOT__/index/unionschool">联盟高校</a></li>
+                    <else/>
+                    <li><a href="__ROOT__/index/unionschool">联盟高校</a></li>
+
+                </if>
+
 		<if condition="((MODULE_NAME eq 'News') AND (ACTION_NAME eq 'index')) OR ((MODULE_NAME eq 'News') AND (ACTION_NAME eq 'info'))">
                 <li class="active"><a href="__ROOT__/news">新闻动态</a></li>
 		<else/>

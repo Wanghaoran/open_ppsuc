@@ -60,7 +60,7 @@
                     <ul class="unstyled" id="news">
 		      <volist name="result_news" id="rn">
                         <li>
-			<span class="pull-right text-info"><!--{$rn.addtime|date="Y-m-d", ###}--!></span> <strong style="color:<!--{$rn.color}--!>;">【<!--{$rn.ncname}--!>】</strong>&nbsp;&nbsp;<a style="color:black;" target="_blank" href="__ROOT__/news/info/id/<!--{$rn.id}--!>"><!--{$rn.title}--!></a>
+			<span class="pull-right text-info"><!--{$rn.addtime|date="Y-m-d", ###}--!></span> <strong style="color:<!--{$rn.color}--!>;">【<!--{$rn.ncname}--!>】</strong>&nbsp;&nbsp;<a style="color:black;" target="_blank" href="__ROOT__/news/info/id/<!--{$rn.id}--!>"><!--{$rn.title|msubstr=0,17}--!></a>
                         </li>
 		      </volist>
                     </ul>
@@ -88,7 +88,7 @@
                 <div class="thumbnail">
                     <img src="__PUBLIC__/index/image/open_source.png" />
                     <div class="caption">
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;目前，中国人民公安大学网络教育学院拥有15门网络公开课，涉及公安指挥、犯罪学、刑事侦查学等多个领域，目前课程总数量达到200余节。由于部分课程涉密，所以不对普通学生开放。从这里您可以了解到最新的课程信息和课程安排</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;目前，中国人民公安大学网络教育学院拥有15门网络公开课，涉及公安指挥、犯罪学、刑事侦查学等多个领域，目前课程总量达到200余节。由于部分课程涉密，所以不对外开放。您可以了解到最新的课程信息和课程安排</p>
                         <button class="btn btn-large btn-block btn-primary" type="button" style="font-family:Microsoft YaHei,Helvetica,Arial,sans-serif;" onclick="location.href='__ROOT__/member.php/course';">开放资源　》</button>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                     <img src="__PUBLIC__/index/image/teamwork_school.png" />
                     <div class="caption">
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;“普通高等学校继续教育数字化学习资源开放联盟”是为了促进普通高校数字化学习资源建设，推动普通高校自觉参与推动学习型社会建设基础上，由北京大学牵头，联合国内103所普通高等学校建立起来的协作性组织</p>
-			<button class="btn btn-large btn-block btn-primary" type="button" style="font-family:Microsoft YaHei,Helvetica,Arial,sans-serif;">联盟高校　》</button>
+			<button class="btn btn-large btn-block btn-primary" type="button" style="font-family:Microsoft YaHei,Helvetica,Arial,sans-serif;" onclick="location.href='__ROOT__/index/unionschool';">联盟高校　》</button>
                     </div>
                 </div>
             </div>
