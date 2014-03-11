@@ -5,6 +5,10 @@ class IndexAction extends CommonAction {
     $News = M('News');
     $result_news = $News -> alias('n') -> field('n.id,n.title,nc.name as ncname,nc.color,n.addtime') -> join('open_news_category as nc ON n.cid = nc.id') -> limit(12) -> order('n.addtime DESC') -> select();
     $this -> assign('result_news', $result_news);
+      //精品课程
+      $Source = M('Source');
+      $result_source = $Source -> limit(8) -> order('sort ASC') -> select();
+      $this -> assign('result_source', $result_source);
     $this -> display();
   }
 

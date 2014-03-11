@@ -121,297 +121,34 @@
             <div class="span12">
                 <div class="tabbable tabs-left">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#lA" style="background-color: #FF8400;color: #ffffff;"><i class="icon-book icon-white"></i> 最新更新</a></li>
-                        <li class=""><a data-toggle="tab" href="#lB" style="background-color: #C0B408;color: #ffffff;"><i class="icon-star icon-white"></i> 最热课程</a></li>
-                        <li class=""><a data-toggle="tab" href="#lC" style="background-color: #7EB80E;color: #ffffff;"><i class="icon-circle-arrow-down icon-white"></i> 免费课程</a></li>
                         <li class=""><a data-toggle="tab" href="#lD" style="background-color: #298ABD;color: #ffffff;"><i class="icon-thumbs-up icon-white"></i> 精品课程</a></li>
                     </ul>
                     <div class="tab-content">
                         <div id="lA" class="tab-pane active">
                             <div class="well well-small">
                                 <ul class="unstyled class_list">
+                                <volist name="result_source" id="rs">
                                     <li>
-                                        <span class="badge badge-important">1</span>&nbsp;&nbsp;
-                                        <span>论非法获取计算机信息系统数据罪的必要性</span>&nbsp;&nbsp;
-                                        <span class="label label-success">继续教育学院</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">唐平</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:20分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
+                                    <elt name="i" value="3">
+                                        <span class="badge badge-important"><!--{$i}--!></span>&nbsp;&nbsp;
+                                    <else/>
+                                        <span class="badge"><!--{$i}--!></span>&nbsp;&nbsp;
+                                    </elt>
+                                        <span><a href="<!--{$rs.url}--!>" target="_blank"><!--{$rs.name}--!></a></span>&nbsp;&nbsp;
+                                        <span class="label label-success"><!--{$rs.school}--!></span>&nbsp;-&nbsp;
+                                        <span class="label label-info"><!--{$rs.teacher}--!></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="label label-important">时长:<!--{$rs.time}--!></span>
+                                        <elt name="i" value="3">
+                                        <span class="pull-right text-error">2014-03-11</span>
+                                        <else/>
+                                        <span class="pull-right">2014-03-11</span>
+                                        </elt>
                                     </li>
-                                    <li>
-                                        <span class="badge badge-important">2</span>&nbsp;&nbsp;
-                                        <span>公安人力资源管理在日常公安工作中的应用于应对方法</span>&nbsp;&nbsp;
-                                        <span class="label label-success">公安管理系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">王毅虹</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:15分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge badge-important">3</span>&nbsp;&nbsp;
-                                        <span>警察防卫与控制</span>&nbsp;&nbsp;
-                                        <span class="label label-success">警务战术系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">尹伟</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:19分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">4</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">5</span>&nbsp;&nbsp;
-                                        <span>基于web模式的日志管理系统的计算机信息系统的入侵检测与攻击防护实践</span>&nbsp;&nbsp;
-                                        <span class="label label-success">网络安全保卫学院</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">唐平</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:38分钟</span>
-                                        <span class="pull-right">2013-05-11</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">6</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">7</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">8</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
+                                </volist>
                                 </ul>
                             </div>
                         </div>
-                        <div id="lB" class="tab-pane">
-                            <div class="well well-small">
-                                <ul class="unstyled class_list">
-                                    <li>
-                                        <span class="badge badge-important">1</span>&nbsp;&nbsp;
-                                        <span>基于web模式的日志管理系统的计算机信息系统的入侵检测与攻击防护实践</span>&nbsp;&nbsp;
-                                        <span class="label label-success">网络安全保卫学院</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">唐平</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:38分钟</span>
-                                        <span class="pull-right text-error">2013-05-11</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge badge-important">2</span>&nbsp;&nbsp;
-                                        <span>警察防卫与控制</span>&nbsp;&nbsp;
-                                        <span class="label label-success">警务战术系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">尹伟</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:19分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge badge-important">3</span>&nbsp;&nbsp;
-                                        <span>公安人力资源管理在日常公安工作中的应用于应对方法</span>&nbsp;&nbsp;
-                                        <span class="label label-success">公安管理系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">王毅虹</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:15分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">4</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">5</span>&nbsp;&nbsp;
-                                        <span>论非法获取计算机信息系统数据罪的必要性</span>&nbsp;&nbsp;
-                                        <span class="label label-success">继续教育学院</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">唐平</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:20分钟</span>
-                                        <span class="pull-right">2013-05-15</span>
 
-                                    </li>
-                                    <li>
-                                        <span class="badge">6</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">7</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">8</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div id="lC" class="tab-pane">
-                            <div class="well well-small">
-                                <ul class="unstyled class_list">
-                                    <li>
-                                        <span class="badge badge-important">1</span>&nbsp;&nbsp;
-                                        <span>论非法获取计算机信息系统数据罪的必要性</span>&nbsp;&nbsp;
-                                        <span class="label label-success">继续教育学院</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">唐平</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:20分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge badge-important">2</span>&nbsp;&nbsp;
-                                        <span>公安人力资源管理在日常公安工作中的应用于应对方法</span>&nbsp;&nbsp;
-                                        <span class="label label-success">公安管理系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">王毅虹</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:15分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge badge-important">3</span>&nbsp;&nbsp;
-                                        <span>警察防卫与控制</span>&nbsp;&nbsp;
-                                        <span class="label label-success">警务战术系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">尹伟</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:19分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">4</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">5</span>&nbsp;&nbsp;
-                                        <span>基于web模式的日志管理系统的计算机信息系统的入侵检测与攻击防护实践</span>&nbsp;&nbsp;
-                                        <span class="label label-success">网络安全保卫学院</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">唐平</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:38分钟</span>
-                                        <span class="pull-right">2013-05-11</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">6</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">7</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">8</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div id="lD" class="tab-pane">
-                            <div class="well well-small">
-                                <ul class="unstyled class_list">
-                                    <li>
-                                        <span class="badge badge-important">1</span>&nbsp;&nbsp;
-                                        <span>基于web模式的日志管理系统的计算机信息系统的入侵检测与攻击防护实践</span>&nbsp;&nbsp;
-                                        <span class="label label-success">网络安全保卫学院</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">唐平</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:38分钟</span>
-                                        <span class="pull-right text-error">2013-05-11</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge badge-important">2</span>&nbsp;&nbsp;
-                                        <span>警察防卫与控制</span>&nbsp;&nbsp;
-                                        <span class="label label-success">警务战术系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">尹伟</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:19分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge badge-important">3</span>&nbsp;&nbsp;
-                                        <span>公安人力资源管理在日常公安工作中的应用于应对方法</span>&nbsp;&nbsp;
-                                        <span class="label label-success">公安管理系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">王毅虹</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:15分钟</span>
-                                        <span class="pull-right text-error">2013-05-15</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">4</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">5</span>&nbsp;&nbsp;
-                                        <span>论非法获取计算机信息系统数据罪的必要性</span>&nbsp;&nbsp;
-                                        <span class="label label-success">继续教育学院</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">唐平</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:20分钟</span>
-                                        <span class="pull-right">2013-05-15</span>
-
-                                    </li>
-                                    <li>
-                                        <span class="badge">6</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">7</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                    <li>
-                                        <span class="badge">8</span>&nbsp;&nbsp;
-                                        <span>警察在突发性群体事件中所处的地位与处理原则</span>&nbsp;&nbsp;
-                                        <span class="label label-success">治安系</span>&nbsp;-&nbsp;
-                                        <span class="label label-info">某某</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span class="label label-important">时长:29分钟</span>
-                                        <span class="pull-right">2013-05-12</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
